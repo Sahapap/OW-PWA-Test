@@ -36,6 +36,12 @@ function App() {
         <button onClick={callEvoFromPWA}>
           Test Call Evo from PWA.
         </button>
+        <br/>
+        <br/>
+        <a href="intent://#Intent;scheme=package;package=com.evopayments.payiso;end">Link to call Evo</a>
+        <br/>
+        <br/>
+        <a href="intent://#Intent;package=com.evopayments.payiso;end">Link to call Evo (No Schme)</a>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
