@@ -15,7 +15,7 @@ function App() {
       alert("Error launching the native app");
     }
   }
-ห
+
   return (
     <>
       <div>
