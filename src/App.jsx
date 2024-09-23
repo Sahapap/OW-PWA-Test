@@ -10,12 +10,12 @@ function App() {
     console.log("Call")
 
     try {
-      window.location.href = "intent://#Intent;scheme=package;package=com.evopayments.payiso;end";
+      window.location.href = "intent://#Intent;scheme=payiso;package=com.evopayments.payiso;end";
     } catch (e) {
       alert("Error launching the native app");
     }
   }
-
+ห
   return (
     <>
       <div>
@@ -38,7 +38,7 @@ function App() {
         </button>
         <br/>
         <br/>
-        <a href="intent://#Intent;scheme=package;package=com.evopayments.payiso;end">Link to call Evo</a>
+        <a href="intent://#Intent;scheme=payiso;package=com.evopayments.payiso;end">Link to call Evo</a>
         <br/>
         <br/>
         <a href="intent://#Intent;package=com.evopayments.payiso;end">Link to call Evo (No Schme)</a>
@@ -50,7 +50,22 @@ function App() {
         <a href="intent://#Intent;scheme=evo-payment;action=android.intent.action.VIEW;end">Link to call Evo (From GPT 2)</a>
         <br/>
         <br/>
+        <a href="intent://#Intent;scheme=payiso;action=android.intent.action.VIEW;end">Link to call Evo (From GPT 2) && scheme = payiso</a>
+        <br/>
+        <br/>
         <a href="intent://#Intent;scheme=evo-payment;package=com.evopayments.payiso;action=com.evopayments.payiso.PERFORM_TRANSACTION;end">Link to call Evo (P'Hong)</a>
+        <br/>
+        <br/>
+        <a href="intent://#Intent;scheme=payiso;package=com.evopayments.payiso;action=com.evopayments.payiso.PERFORM_TRANSACTION;end">Link to call Evo (P'Hong) 2 scheme=paysio</a>
+        <br/>
+        <br/>
+        <a href="intent://#Intent;scheme=payiso;package=com.evopayments.payiso;action=com.evopayments.payiso.PERFORM_TRANSACTION;end">scheme = payiso</a>
+        <br/>
+        <br/>
+        <a href="intent://#Intent;scheme=payiso;package=com.evopayments.payiso;end">scheme = payiso No action</a>
+        <br/>
+        <br/>
+        <a href="intent://#Intent;scheme=payiso;action=com.evopayments.payiso.PERFORM_TRANSACTION;end">scheme = payiso no package</a>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
