@@ -42,6 +42,12 @@ function App() {
         <br/>
         <br/>
         <a href="intent://#Intent;package=com.evopayments.payiso;end">Link to call Evo (No Schme)</a>
+        <br/>
+        <br/>
+        <a href="intent://#Intent;scheme=evo-payment;package=com.evopayments.payiso;end">Link to call Evo (From GPT)</a>
+        <br/>
+        <br/>
+        <a href="intent://#Intent;scheme=evo-payment;action=android.intent.action.VIEW;end">Link to call Evo (From GPT 2)</a>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
